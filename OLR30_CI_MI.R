@@ -8,10 +8,10 @@ source('functionLibrary.R')
 #---------------------------------------------------------------------
 #---------------- Read and preprocess the data
 
-XY = read.table('data/OLR30_data_wNAs.tsv',sep='\t',header = TRUE)
-#XY = read.table('data/OLR30_data_meanImputed.tsv',sep='\t',header = TRUE)
-#XY = read.table('data/STL_data_wNAs.tsv',sep='\t',header = TRUE)
-#XY = read.table('data/STL_data_meanImputed.tsv',sep='\t',header = TRUE)
+XY = read.table('OLR30_data_wNAs.tsv',sep='\t',header = TRUE)
+#XY = read.table('OLR30_data_meanImputed.tsv',sep='\t',header = TRUE)
+#XY = read.table('STL_data_wNAs.tsv',sep='\t',header = TRUE)
+#XY = read.table('STL_data_meanImputed.tsv',sep='\t',header = TRUE)
 
 
 
@@ -20,8 +20,7 @@ XY = read.table('data/OLR30_data_wNAs.tsv',sep='\t',header = TRUE)
 # For STL the p features are not filtered and it contains all possible biomarkers in Kaggle data
 # For OLR-30 a different version of the data should be read and the p features should be only the biomarkers 
 # from Table 3 of the paper are used. 
-
-# For this code XY is not pre-imputed and it contains NAs among the p features
+# For Multiple Imputaiton codes XY is not pre-imputed and it contains NAs among the p features
 
 # Separate features from responses
 nc = ncol(XY)
