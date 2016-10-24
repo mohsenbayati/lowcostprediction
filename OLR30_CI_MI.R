@@ -1,4 +1,4 @@
-# This code reads the kaggle data for STL and performs HD and MICE multiple imputations and outputs AUC
+# This code reads the kaggle data for OLR30 and performs HD and MICE multiple imputations and outputs AUC
 # confidence intervals for each of the K tasks
 
 rm(list =ls())
